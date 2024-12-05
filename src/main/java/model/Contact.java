@@ -7,9 +7,9 @@ public class Contact implements Serializable {
     private String phoneNumber;
 
     public Contact(String name, String phoneNumber) {
-        if (!phoneNumber.matches("^\\+?\\d{10,13}$")) {
+        /*if (!phoneNumber.matches("^\\+?\\d{10,13}$")) {
             throw new IllegalArgumentException("Invalid phone number format.");
-        }
+        }*/
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
